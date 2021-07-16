@@ -373,6 +373,7 @@ body {
 .footer {
   background-color: #100e1d;
   position: relative;
+  margin-top: 100px;
   height: 50vh;
   padding: 5% 10% 0 10%;
 }
@@ -434,10 +435,31 @@ body {
 }
 
 /*---------------------- responsive ---------------------------*/
+@media (max-width: 1025px) {
+  .body {
+    padding-left: 5%;
+    padding-right: 0%;
+  }
 
-@media (max-width: 1000px) {
+  .profile {
+    width: 55%;
+  }
+
   .nav__item {
     font-size: 15px;
+  }
+
+  .body__stack {
+    height: 50vh;
+  }
+
+  .body__team {
+    height: 50vh;
+  }
+
+  .clients {
+    height: 50vh;
+    width: 70%;
   }
 }
 
@@ -451,7 +473,18 @@ body {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
+  .title {
+    font-size: 24px;
+    width: 100%;
+  }
+
+  .profile {
+    width: 60%;
+  }
+} 
+
+@media (max-width: 415px) {
   .logo {
     font-size: 24px;
   }
@@ -540,6 +573,14 @@ body {
     width: 100%;
   }
 
+  .team__img{
+    width: 100%;
+  }
+
+  .clients{
+    width: 100%;
+  }
+
   .footer {
     height: 80vh;
   }
@@ -547,5 +588,9 @@ body {
   .contact {
     flex-direction: column;
     height: 80%;
+  }
+
+  .profile {
+    width: 100%;
   }
 }
