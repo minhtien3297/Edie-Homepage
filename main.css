@@ -594,3 +594,9 @@ body {
     width: 100%;
   }
 }
+
+@media (max-width: 320px){
+  .button--inside{
+    right: -20px;
+  }
+}
